@@ -23,7 +23,7 @@ namespace _21_03_10_149_DateCalcApp
             DateTime birthday = DTPBirthDay.Value;
 
             TxtResult.Text = $"{today.Subtract(birthday).TotalDays: #,###}";   // Subtract로 지정된 날짜와 시간을 뺌.
-            TxtYear.Text = (today.Subtract(birthday).TotalDays / 365).ToString("0");
+            TxtYear.Text = $" {(today.Subtract(birthday).TotalDays / 365).ToString("0")}";
         }
     }
 }
