@@ -9,6 +9,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_03_10_141_RestaurantSelA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_03_10_142_TravelWishApp", "21_03_10_142_TravelWishApp\21_03_10_142_TravelWishApp.csproj", "{F0737B9A-58EA-416D-82B0-39F27176FCEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_03_10_144_ListViewApp", "21_03_10_144_ListViewApp\21_03_10_144_ListViewApp.csproj", "{C859D078-BE81-4EC4-878F-21F674221C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_03_10_146_StudyHistroyApp", "21_03_10_146_StudyHistroyApp\21_03_10_146_StudyHistroyApp.csproj", "{EBFE25BE-259D-4EC4-A8C4-01449E36A600}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_03_10_147_DigitalClockApp", "21_03_10_147_DigitalClockApp\21_03_10_147_DigitalClockApp.csproj", "{650ACA32-81C7-4ECA-8A8B-36492D2EE8E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_03_10_149_DateCalcApp", "21_03_10_149_DateCalcApp\21_03_10_149_DateCalcApp.csproj", "{8661A73F-7D6C-4F3D-9643-BE40B759E0DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_03_10_150_DigitalAlarmClockApp", "21_03_10_150_DigitalAlarmClockApp\21_03_10_150_DigitalAlarmClockApp.csproj", "{AFDC27C2-0A60-4DEB-925E-9E99EEB4C532}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +37,26 @@ Global
 		{F0737B9A-58EA-416D-82B0-39F27176FCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0737B9A-58EA-416D-82B0-39F27176FCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0737B9A-58EA-416D-82B0-39F27176FCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C859D078-BE81-4EC4-878F-21F674221C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C859D078-BE81-4EC4-878F-21F674221C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C859D078-BE81-4EC4-878F-21F674221C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C859D078-BE81-4EC4-878F-21F674221C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFE25BE-259D-4EC4-A8C4-01449E36A600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFE25BE-259D-4EC4-A8C4-01449E36A600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFE25BE-259D-4EC4-A8C4-01449E36A600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFE25BE-259D-4EC4-A8C4-01449E36A600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{650ACA32-81C7-4ECA-8A8B-36492D2EE8E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{650ACA32-81C7-4ECA-8A8B-36492D2EE8E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{650ACA32-81C7-4ECA-8A8B-36492D2EE8E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{650ACA32-81C7-4ECA-8A8B-36492D2EE8E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8661A73F-7D6C-4F3D-9643-BE40B759E0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8661A73F-7D6C-4F3D-9643-BE40B759E0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8661A73F-7D6C-4F3D-9643-BE40B759E0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8661A73F-7D6C-4F3D-9643-BE40B759E0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDC27C2-0A60-4DEB-925E-9E99EEB4C532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDC27C2-0A60-4DEB-925E-9E99EEB4C532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDC27C2-0A60-4DEB-925E-9E99EEB4C532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDC27C2-0A60-4DEB-925E-9E99EEB4C532}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
