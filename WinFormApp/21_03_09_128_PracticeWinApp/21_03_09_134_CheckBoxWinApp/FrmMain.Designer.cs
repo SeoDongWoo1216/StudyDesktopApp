@@ -1,7 +1,7 @@
 ﻿
 namespace _21_03_09_134_CheckBoxWinApp
 {
-    partial class Form1
+    partial class FrmMain
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -118,7 +118,7 @@ namespace _21_03_09_134_CheckBoxWinApp
             this.ChkDurian.Text = "두리안";
             this.ChkDurian.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,7 +131,8 @@ namespace _21_03_09_134_CheckBoxWinApp
             this.Controls.Add(this.ChkPear);
             this.Controls.Add(this.ChkApple);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Favorite Fruits App";
             this.ResumeLayout(false);
             this.PerformLayout();

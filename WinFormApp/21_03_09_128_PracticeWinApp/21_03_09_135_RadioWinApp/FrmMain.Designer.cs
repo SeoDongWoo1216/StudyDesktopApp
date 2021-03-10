@@ -142,7 +142,7 @@ namespace _21_03_09_135_RadioWinApp
             this.RdbMale.Text = "남";
             this.RdbMale.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -150,8 +150,9 @@ namespace _21_03_09_135_RadioWinApp
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.BtnResult);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "RadioButton And GroupBox";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

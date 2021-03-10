@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _21_03_09_134_CheckBoxWinApp
 {
-    public partial class Form1 : Form
+    public partial class FrmMain : Form
     {
-        public Form1()
+        public FrmMain()
         {
             InitializeComponent();
         }

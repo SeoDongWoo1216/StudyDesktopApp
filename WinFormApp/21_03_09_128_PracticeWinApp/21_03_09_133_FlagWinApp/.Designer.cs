@@ -36,11 +36,12 @@ namespace _21_03_09_133_FlagWinApp
             // LblGreeting
             // 
             this.LblGreeting.AutoSize = true;
-            this.LblGreeting.Location = new System.Drawing.Point(110, 61);
+            this.LblGreeting.Location = new System.Drawing.Point(117, 61);
             this.LblGreeting.Name = "LblGreeting";
             this.LblGreeting.Size = new System.Drawing.Size(69, 12);
             this.LblGreeting.TabIndex = 0;
             this.LblGreeting.Text = "LblGreeting";
+            this.LblGreeting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BtnGreeting
             // 
@@ -60,6 +61,7 @@ namespace _21_03_09_133_FlagWinApp
             this.Controls.Add(this.BtnGreeting);
             this.Controls.Add(this.LblGreeting);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Greeting App";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

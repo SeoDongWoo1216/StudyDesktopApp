@@ -57,7 +57,7 @@ namespace _21_03_09_132_LabelTestApp
             // 
             this.LblManualSize.Location = new System.Drawing.Point(12, 90);
             this.LblManualSize.Name = "LblManualSize";
-            this.LblManualSize.Size = new System.Drawing.Size(460, 128);
+            this.LblManualSize.Size = new System.Drawing.Size(341, 116);
             this.LblManualSize.TabIndex = 2;
             this.LblManualSize.Text = "LblManualSize";
             // 
@@ -65,7 +65,7 @@ namespace _21_03_09_132_LabelTestApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 227);
+            this.ClientSize = new System.Drawing.Size(377, 224);
             this.Controls.Add(this.LblManualSize);
             this.Controls.Add(this.LblAutoSize);
             this.Controls.Add(this.BtnPushText);
