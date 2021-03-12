@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_210312_168_MonteCarloPiApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="495" Width="450" Initialized="Window_Initialized">
+        Title="MainWindow" Height="495" Width="450" Initialized="Window_Initialized" WindowStartupLocation="CenterScreen">
     <DockPanel>
         <Grid x:Name="GrdMain" Margin="10" DockPanel.Dock="Top">
             <Canvas Name="CvsPi"  Height="400" Width="400">

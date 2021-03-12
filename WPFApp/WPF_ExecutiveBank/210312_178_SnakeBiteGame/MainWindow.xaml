@@ -1,0 +1,23 @@
+﻿<Window x:Class="_210312_178_SnakeBiteGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_210312_178_SnakeBiteGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image Stretch="Fill" Source="SnakeBite_image.png"/>
+        
+        <TextBlock Text="Snake Bite Game" 
+                   FontSize="30" FontWeight="ExtraBold" Foreground="YellowGreen"
+                   HorizontalAlignment="center" Margin="40"/>
+        
+        <Button x:Name="BtnPlay" Content="play" Width="200" Height="50" 
+                Margin="110,329,482,40" FontSize="20" Click="BtnPlay_Click" />
+        
+        <Button x:Name="BtnExit" Content="Exit" Width="200" Height="50" 
+                Margin="482,329,110,40" FontSize="20" Click="BtnExit_Click"/>
+
+    </Grid>
+</Window>
