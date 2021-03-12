@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_03_12_160_WPFCalculatorApp", "21_03_12_160_WPFCalculatorApp\21_03_12_160_WPFCalculatorApp.csproj", "{CCB92A55-0262-495A-9D98-ED74C29B4AA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "210312_166_AnalogClockApp", "210312_166_AnalogClockApp\210312_166_AnalogClockApp.csproj", "{2DA3AC21-4CAE-4436-879D-60FAB6F8802E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "210312_168_MonteCarloPiApp", "210312_168_MonteCarloPiApp\210312_168_MonteCarloPiApp.csproj", "{2F03B7D6-0916-454D-B2F5-573F1BC9B6D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCB92A55-0262-495A-9D98-ED74C29B4AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB92A55-0262-495A-9D98-ED74C29B4AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB92A55-0262-495A-9D98-ED74C29B4AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB92A55-0262-495A-9D98-ED74C29B4AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA3AC21-4CAE-4436-879D-60FAB6F8802E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA3AC21-4CAE-4436-879D-60FAB6F8802E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA3AC21-4CAE-4436-879D-60FAB6F8802E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA3AC21-4CAE-4436-879D-60FAB6F8802E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F03B7D6-0916-454D-B2F5-573F1BC9B6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F03B7D6-0916-454D-B2F5-573F1BC9B6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F03B7D6-0916-454D-B2F5-573F1BC9B6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F03B7D6-0916-454D-B2F5-573F1BC9B6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF1C927A-57BE-4F3E-8054-A8B224935843}
+	EndGlobalSection
+EndGlobal
