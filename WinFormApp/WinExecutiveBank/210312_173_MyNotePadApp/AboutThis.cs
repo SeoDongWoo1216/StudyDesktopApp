@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _210312_161_WinCalculatorApp
+namespace _210312_173_MyNotePadApp
 {
     partial class AboutThis : Form
     {

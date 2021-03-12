@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // 제어됩니다. 어셈블리와 관련된 정보를 수정하려면
 // 이러한 특성 값을 변경하세요.
 [assembly: AssemblyTitle("210312_173_MyNotePadApp")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("메모장입니다.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("210312_173_MyNotePadApp")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCompany("한국산업인력공단")]
+[assembly: AssemblyProduct("MyNotePadApp")]
+[assembly: AssemblyCopyright("Copyright © PKNU 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
