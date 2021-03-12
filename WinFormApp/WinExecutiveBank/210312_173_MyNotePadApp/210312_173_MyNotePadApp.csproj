@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59A65138-30E9-4C46-8B83-F964BC96B591}</ProjectGuid>
+    <ProjectGuid>{D02D4311-FCF3-4B02-96E9-0C8048B60671}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_210312_161_WinCalculatorApp</RootNamespace>
-    <AssemblyName>210312_161_WinCalculatorApp</AssemblyName>
+    <RootNamespace>_210312_173_MyNotePadApp</RootNamespace>
+    <AssemblyName>210312_173_MyNotePadApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutThis.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AboutThis.Designer.cs">
-      <DependentUpon>AboutThis.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,9 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AboutThis.resx">
-      <DependentUpon>AboutThis.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
