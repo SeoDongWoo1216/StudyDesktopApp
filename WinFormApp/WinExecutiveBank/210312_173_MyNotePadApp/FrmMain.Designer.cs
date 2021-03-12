@@ -55,7 +55,7 @@ namespace _210312_173_MyNotePadApp
             this.도움말HToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(480, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -148,7 +148,7 @@ namespace _210312_173_MyNotePadApp
             this.TxtMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtMain.Location = new System.Drawing.Point(0, 24);
             this.TxtMain.Name = "TxtMain";
-            this.TxtMain.Size = new System.Drawing.Size(800, 426);
+            this.TxtMain.Size = new System.Drawing.Size(480, 270);
             this.TxtMain.TabIndex = 1;
             this.TxtMain.Text = "";
             this.TxtMain.TextChanged += new System.EventHandler(this.TxtMain_TextChanged);
@@ -157,7 +157,7 @@ namespace _210312_173_MyNotePadApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(480, 294);
             this.Controls.Add(this.TxtMain);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
