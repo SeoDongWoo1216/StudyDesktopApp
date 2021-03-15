@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 어셈블리에 대한 일반 정보는 다음 특성 집합을 통해 
 // 제어됩니다. 어셈블리와 관련된 정보를 수정하려면
 // 이러한 특성 값을 변경하세요.
-[assembly: AssemblyTitle("210312_173_MyNotePadApp")]
-[assembly: AssemblyDescription("This is NotePad")]
+[assembly: AssemblyTitle("210315_181_AddressInfoApp")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("GitHubSeoDongWoo1216")]
-[assembly: AssemblyProduct("MyNotePadApp")]
-[assembly: AssemblyCopyright("Copyright ©SeoDongWoo1216 2021")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("210315_181_AddressInfoApp")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 이 프로젝트가 COM에 노출되는 경우 다음 GUID는 typelib의 ID를 나타냅니다.
-[assembly: Guid("d02d4311-fcf3-4b02-96e9-0c8048b60671")]
+[assembly: Guid("922b839b-794a-4567-af92-3b6ec5aafad4")]
 
 // 어셈블리의 버전 정보는 다음 네 가지 값으로 구성됩니다.
 //
