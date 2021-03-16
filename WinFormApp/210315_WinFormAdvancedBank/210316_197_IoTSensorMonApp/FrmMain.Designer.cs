@@ -279,6 +279,7 @@ namespace _210316_197_IoTSensorMonApp
             this.BtnViewAll.TabIndex = 5;
             this.BtnViewAll.Text = "View All";
             this.BtnViewAll.UseVisualStyleBackColor = true;
+            this.BtnViewAll.Click += new System.EventHandler(this.BtnViewAll_Click);
             // 
             // BtnZoom
             // 
@@ -289,6 +290,7 @@ namespace _210316_197_IoTSensorMonApp
             this.BtnZoom.TabIndex = 6;
             this.BtnZoom.Text = "Zoom";
             this.BtnZoom.UseVisualStyleBackColor = true;
+            this.BtnZoom.Click += new System.EventHandler(this.BtnZoom_Click);
             // 
             // FrmMain
             // 
@@ -307,6 +309,7 @@ namespace _210316_197_IoTSensorMonApp
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IoT Photoresistor Monitoring";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);

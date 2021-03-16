@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO.Ports;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -14,7 +12,14 @@ namespace _210316_197_IoTSensorMonApp
 {
     public partial class FrmMain : Form
     {
-        private double xCount = 200;  // 차트에 보이는 데이터 수
+        private Timer timerSimul = new Timer();
+        private Random randPhoto = new Random();
+        private bool IsSimulation = false;
+        private List<SensorData> sensors = new List<SensorData>();  // 차트, 리스트박스에 출력될 데이터
+        private string connString = "Data Source=127.0.0.1;Initial Catalog=IoTData;" +
+                                    "User ID=sa;Password=mssql_p@ssw0rd!";
+
+        private double xCount = 50;  // 차트에 보이는 데이터 수
         public FrmMain()
         {
             InitializeComponent();
@@ -50,12 +55,9 @@ namespace _210316_197_IoTSensorMonApp
             BtnConnect.Enabled = BtnDisConnect.Enabled = false;
         }
 
-
         // 차트 초기 설정
         private void InitChartStyle()
         {
-            // ChtPhotoResistors.ChartAreas.Clear();
-            // ChtPhotoResistors.ChartAreas.Add("Chart");
             ChtPhotoResistors.ChartAreas[0].BackColor = Color.Blue;
             ChtPhotoResistors.ChartAreas[0].AxisX.Minimum = 0;
             ChtPhotoResistors.ChartAreas[0].AxisX.Maximum = xCount;
@@ -90,18 +92,15 @@ namespace _210316_197_IoTSensorMonApp
             }
         }
 
-        private Timer timerSimul = new Timer();
-        private Random randPhoto = new Random();
-        private bool IsSimulation = false;
-        private List<SensorData> sensors = new List<SensorData>();  // 차트, 리스트박스에 출력될 데이터
         private void MnuBeginSimulation_Click(object sender, EventArgs e)
         {
             IsSimulation = true;
             timerSimul.Enabled = true;
-            timerSimul.Interval = 1000; // 1초
+            timerSimul.Interval = 100;
             timerSimul.Tick += TimerSimul_Tick;
             timerSimul.Start();
         }
+
         private void MnuEndSimulation_Click(object sender, EventArgs e)
         {
             IsSimulation = false;
@@ -122,6 +121,7 @@ namespace _210316_197_IoTSensorMonApp
             var currentTime = DateTime.Now;
             SensorData data = new SensorData(currentTime, v, IsSimulation);
             sensors.Add(data);
+            InsertTable(data);
 
             // 센서값 개수 출력
             TxtSensorNum.Text = $"{sensors.Count}";
@@ -137,6 +137,48 @@ namespace _210316_197_IoTSensorMonApp
 
             // 차트에 데이터 출력
             ChtPhotoResistors.Series[0].Points.Add(v);
+
+            // 200개 넘으면
+            ChtPhotoResistors.ChartAreas[0].AxisX.Minimum = 0;
+            ChtPhotoResistors.ChartAreas[0].AxisX.Maximum = (sensors.Count >= xCount) ? sensors.Count : xCount;
+
+            // Zoom처리
+            if (sensors.Count > xCount)
+                ChtPhotoResistors.ChartAreas[0].AxisX.ScaleView.Zoom(sensors.Count - xCount, sensors.Count); // 10에서 200까지
+            else 
+                ChtPhotoResistors.ChartAreas[0].AxisX.ScaleView.Zoom(0, xCount);  // 0에서 200까지
+
+            // BtnDisplay 표시
+            if (IsSimulation)
+                BtnDisplay.Text = v.ToString();
+            else
+                BtnDisplay.Text = "~" + "\n" + v.ToString();
+        }
+
+
+        // IoTData데이터베이스 내 tbl_PhotoResistor 테이블에 센서 데이터 입력
+        private void InsertTable(SensorData data)
+        {
+            try
+            {
+                using(SqlConnection conn = new SqlConnection(connString))
+                {
+                    if (conn.State == ConnectionState.Closed)
+                        conn.Open();
+
+                    var query = $"insert into tbl_PhotoResistor " +
+                        $"(CurrentDt, Value, SimulFlag)" +
+                        $"values" +
+                        $"('{data.Current.ToString("yyyy-MM-dd HH:mm:ss")}','{data.Value}','{(data.SimulFlag == true ? "1" : "0")}');";
+
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"예외 발생 : {ex.Message}");
+            }
         }
 
         // 종료 버튼 클릭
@@ -152,11 +194,29 @@ namespace _210316_197_IoTSensorMonApp
             Environment.Exit(0);
         }
 
+        private void BtnViewAll_Click(object sender, EventArgs e)
+        {
+            ChtPhotoResistors.ChartAreas[0].AxisX.Minimum = 0;
+            ChtPhotoResistors.ChartAreas[0].AxisX.Maximum = sensors.Count;
+
+            ChtPhotoResistors.ChartAreas[0].AxisX.ScaleView.Zoom(0, sensors.Count);
+            ChtPhotoResistors.ChartAreas[0].AxisX.Interval = sensors.Count / 4;
+        }
+
+        private void BtnZoom_Click(object sender, EventArgs e)
+        {
+            ChtPhotoResistors.ChartAreas[0].AxisX.Minimum = 0;
+            ChtPhotoResistors.ChartAreas[0].AxisX.Maximum = sensors.Count;
+
+            ChtPhotoResistors.ChartAreas[0].AxisX.ScaleView.Zoom(sensors.Count - xCount, sensors.Count);
+            ChtPhotoResistors.ChartAreas[0].AxisX.Interval = xCount / 4;
+        }
+
+
         // 시뮬레이션 끝
         private void BtnDisConnect_Click(object sender, EventArgs e)
         {
             // TODO 나중에 실제 작업시 작성
-
         }
 
 
@@ -165,7 +225,5 @@ namespace _210316_197_IoTSensorMonApp
         {
             // TODO 나중에 실제 작업시 작성
         }
-
-       
     }
 }
