@@ -119,26 +119,29 @@ namespace _210315_181_AddressInfoApp
                 return;
             }
 
-            using (SqlConnection conn = new SqlConnection(connString))
+            if(MessageBox.Show("삭제 하시겠습니까?", "삭제", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (conn.State == ConnectionState.Closed)
-                    conn.Open();
-
-                string query = $"DELETE FROM Address WHERE idx = {result}";
-
-                SqlCommand cmd = new SqlCommand(query, conn);
-                if(cmd.ExecuteNonQuery() == 1)
+                using (SqlConnection conn = new SqlConnection(connString))
                 {
-                    MessageBox.Show("삭제 성공!");
+                    if (conn.State == ConnectionState.Closed)
+                        conn.Open();
+
+                    string query = $"DELETE FROM Address WHERE idx = {result}";
+
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    if (cmd.ExecuteNonQuery() == 1)
+                    {
+                        MessageBox.Show("삭제 성공!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("삭제 실패!");
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("삭제 실패!");
-                }
+
+                ClearInput();
+                ReFreshData();
             }
-
-            ClearInput();
-            ReFreshData();
         }
 
         private void TxtFullName_KeyPress(object sender, KeyPressEventArgs e)
