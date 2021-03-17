@@ -54,6 +54,7 @@
 2. 이미지 뷰어
 3. 전화번호부 프로그램
 4. 아두이노 센서 모니터링(아두이노없이 랜덤수로 출력)
+5. 북렌탈샵 프로그램
 
 [기본학습상세](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/Readme.md) <br>
 [소스모음](https://github.com/SeoDongWoo1216/StudyDesktopApp/tree/main/WinFormApp/210315_WinFormAdvancedBank)
