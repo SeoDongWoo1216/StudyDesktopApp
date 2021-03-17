@@ -1,4 +1,4 @@
-## WPF
+## WPF(Windows Presentation Foundation)
 1. WPF로 Hello World 출력
 2. WPF의 레이아웃(결과화면없음)
 3. WPF BMI 계산기
