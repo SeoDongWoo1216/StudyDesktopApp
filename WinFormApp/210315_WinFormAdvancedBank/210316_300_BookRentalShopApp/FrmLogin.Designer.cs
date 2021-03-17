@@ -71,7 +71,7 @@ namespace _210316_300_BookRentalShopApp
             this.TxtUserId.CustomButton.Visible = false;
             this.TxtUserId.Lines = new string[0];
             this.TxtUserId.Location = new System.Drawing.Point(194, 81);
-            this.TxtUserId.MaxLength = 32767;
+            this.TxtUserId.MaxLength = 20;
             this.TxtUserId.Name = "TxtUserId";
             this.TxtUserId.PasswordChar = '\0';
             this.TxtUserId.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -102,7 +102,7 @@ namespace _210316_300_BookRentalShopApp
             this.TxtPassword.CustomButton.Visible = false;
             this.TxtPassword.Lines = new string[0];
             this.TxtPassword.Location = new System.Drawing.Point(194, 122);
-            this.TxtPassword.MaxLength = 32767;
+            this.TxtPassword.MaxLength = 20;
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '●';
             this.TxtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;

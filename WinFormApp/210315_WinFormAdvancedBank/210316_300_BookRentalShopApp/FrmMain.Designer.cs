@@ -31,12 +31,12 @@ namespace _210316_300_BookRentalShopApp
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.관리MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.구분코드CToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.회원ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.도서BToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuDiv = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuMember = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuBooks = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.대여관리RToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.종료XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuRental = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +44,7 @@ namespace _210316_300_BookRentalShopApp
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.관리MToolStripMenuItem,
-            this.종료XToolStripMenuItem});
+            this.MnuExit});
             this.menuStrip1.Location = new System.Drawing.Point(20, 60);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(960, 24);
@@ -54,49 +54,51 @@ namespace _210316_300_BookRentalShopApp
             // 관리MToolStripMenuItem
             // 
             this.관리MToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.구분코드CToolStripMenuItem,
-            this.회원ToolStripMenuItem,
-            this.도서BToolStripMenuItem,
+            this.MnuDiv,
+            this.MnuMember,
+            this.MnuBooks,
             this.toolStripMenuItem1,
-            this.대여관리RToolStripMenuItem});
+            this.MnuRental});
             this.관리MToolStripMenuItem.Name = "관리MToolStripMenuItem";
             this.관리MToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.관리MToolStripMenuItem.Text = "관리(&M)";
             // 
-            // 구분코드CToolStripMenuItem
+            // MnuDiv
             // 
-            this.구분코드CToolStripMenuItem.Name = "구분코드CToolStripMenuItem";
-            this.구분코드CToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.구분코드CToolStripMenuItem.Text = "구분코드(&C)";
+            this.MnuDiv.Name = "MnuDiv";
+            this.MnuDiv.Size = new System.Drawing.Size(180, 22);
+            this.MnuDiv.Text = "구분코드(&C)";
+            this.MnuDiv.Click += new System.EventHandler(this.MnuDiv_Click);
             // 
-            // 회원ToolStripMenuItem
+            // MnuMember
             // 
-            this.회원ToolStripMenuItem.Name = "회원ToolStripMenuItem";
-            this.회원ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.회원ToolStripMenuItem.Text = "회원(&P)";
+            this.MnuMember.Name = "MnuMember";
+            this.MnuMember.Size = new System.Drawing.Size(180, 22);
+            this.MnuMember.Text = "회원(&P)";
             // 
-            // 도서BToolStripMenuItem
+            // MnuBooks
             // 
-            this.도서BToolStripMenuItem.Name = "도서BToolStripMenuItem";
-            this.도서BToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.도서BToolStripMenuItem.Text = "도서(&B)";
+            this.MnuBooks.Name = "MnuBooks";
+            this.MnuBooks.Size = new System.Drawing.Size(180, 22);
+            this.MnuBooks.Text = "도서(&B)";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
-            // 대여관리RToolStripMenuItem
+            // MnuRental
             // 
-            this.대여관리RToolStripMenuItem.Name = "대여관리RToolStripMenuItem";
-            this.대여관리RToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.대여관리RToolStripMenuItem.Text = "대여관리(&R)";
+            this.MnuRental.Name = "MnuRental";
+            this.MnuRental.Size = new System.Drawing.Size(180, 22);
+            this.MnuRental.Text = "대여관리(&R)";
             // 
-            // 종료XToolStripMenuItem
+            // MnuExit
             // 
-            this.종료XToolStripMenuItem.Name = "종료XToolStripMenuItem";
-            this.종료XToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.종료XToolStripMenuItem.Text = "종료(&X)";
+            this.MnuExit.Name = "MnuExit";
+            this.MnuExit.Size = new System.Drawing.Size(58, 20);
+            this.MnuExit.Text = "종료(&X)";
+            this.MnuExit.Click += new System.EventHandler(this.MnuExit_Click);
             // 
             // FrmMain
             // 
@@ -109,6 +111,8 @@ namespace _210316_300_BookRentalShopApp
             this.Name = "FrmMain";
             this.Text = "책 대여점 프로그램";
             this.TransparencyKey = System.Drawing.Color.Empty;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Shown += new System.EventHandler(this.FrmMain_Shown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -121,12 +125,12 @@ namespace _210316_300_BookRentalShopApp
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 관리MToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 구분코드CToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 회원ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 도서BToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MnuDiv;
+        private System.Windows.Forms.ToolStripMenuItem MnuMember;
+        private System.Windows.Forms.ToolStripMenuItem MnuBooks;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem 대여관리RToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 종료XToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MnuRental;
+        private System.Windows.Forms.ToolStripMenuItem MnuExit;
     }
 }
 
