@@ -29,6 +29,7 @@ namespace _210316_300_BookRentalShopApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.관리MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuDiv = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,6 +76,7 @@ namespace _210316_300_BookRentalShopApp
             this.MnuMember.Name = "MnuMember";
             this.MnuMember.Size = new System.Drawing.Size(180, 22);
             this.MnuMember.Text = "회원(&P)";
+            this.MnuMember.Click += new System.EventHandler(this.MnuMember_Click);
             // 
             // MnuBooks
             // 
@@ -106,12 +108,12 @@ namespace _210316_300_BookRentalShopApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMain";
             this.Text = "책 대여점 프로그램";
             this.TransparencyKey = System.Drawing.Color.Empty;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Shown += new System.EventHandler(this.FrmMain_Shown);
             this.menuStrip1.ResumeLayout(false);

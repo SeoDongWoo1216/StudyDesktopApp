@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 
 namespace _210316_300_BookRentalShopApp.Helper
 {
@@ -14,5 +10,23 @@ namespace _210316_300_BookRentalShopApp.Helper
 
         public static string LoginUserId = string.Empty;
 
+
+
+        // IP주소 받아오는 메서드(로그인할때 호출)
+        internal static string GetLocalIp()
+        {
+            string localIp = "";
+            IPHostEntry host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if(ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                    localIp = ip.ToString();
+                    break;
+                }
+            }
+
+            return localIp;
+        }
     }
 }

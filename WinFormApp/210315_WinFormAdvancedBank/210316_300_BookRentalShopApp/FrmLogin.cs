@@ -1,14 +1,8 @@
 ﻿using MetroFramework;
 using MetroFramework.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _210316_300_BookRentalShopApp
@@ -66,6 +60,7 @@ namespace _210316_300_BookRentalShopApp
                     //reader로 처리
                     reader.Read();
                     strUserId = reader["userID"] != null ? reader["userID"].ToString() : ""; // strUserId가 null이 아니면 문자열형태로 그대로 넣고 아니면 빈값을 넣음
+                    reader.Close();
 
                     if (string.IsNullOrEmpty(strUserId))
                     {
@@ -74,6 +69,14 @@ namespace _210316_300_BookRentalShopApp
                     }
                     else
                     {
+                        // 로그인했을때 접속시간과 IP를 데이터에 저장
+                        var updateQuery = $@"UPDATE membertbl SET 
+                                            lastLoginDt = GETDATE()
+                                           ,LoginIpAddr = '{Helper.Common.GetLocalIp()}'
+                                            WHERE userId = '{strUserId}' ";
+                        cmd.CommandText = updateQuery;
+                        cmd.ExecuteNonQuery();
+
                         MetroMessageBox.Show(this, "접속성공", "로그인성공", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                     }
