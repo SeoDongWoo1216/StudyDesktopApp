@@ -14,12 +14,12 @@
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/tree/main/WinFormApp/210315_WinFormAdvancedBank/210315_170_WinChartApp)
 ---------------------------------------------------------------------------
 #### 이미지 뷰어
-![ImageViewer](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/ResultImage/210315_175_ImageViewerApp_result.gif"이미지 뷰어")
+![ImageViewer](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/ResultImage/210315_175_ImageViewerApp_result.gif "이미지 뷰어")
 
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/210315_175_ImageViewerApp/FrmViewer.cs)
 ---------------------------------------------------------------------------
 #### 전화번호부 프로그램
-![AddrInfo](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/ResultImage/210315_181_AddressInfoApp_result.gif"전화번호부 프로그램")
+![AddrInfo](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/ResultImage/210315_181_AddressInfoApp_result.gif "전화번호부 프로그램")
 ![DB1](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/ResultImage/210315_181_AddressInfoApp_DB1.PNG "저장되는 DB 스키마")
 ![DB2](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/ResultImage/210315_181_AddressInfoApp_DB2.PNG "DB에 데이터 저장확인")
 
