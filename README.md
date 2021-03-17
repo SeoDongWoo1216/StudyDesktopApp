@@ -33,10 +33,7 @@ C# 데스크톱앱 개발 학습 리포지토리입니다.
 9. WMP 컨트롤을 이용한 동영상 플레이어
 10. OpenFileDialog를 이용해서 메모장에서 파일 열기
 11. GDI+와 ToolStrip, StatusStrip을 사용한 그래픽 프로그램(결과화면없음)
-12. WPF로 Hello World 출력
-13. WPF의 레이아웃(결과화면없음)
-14. WPF BMI 계산기
-15. DispatcherTimer와 블링커(깜빡이는) 프로그램
+
 
 [기본학습상세](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_10_140_ExcerciseWinApp/Readme.md) <br>
 [소스모음](https://github.com/SeoDongWoo1216/StudyDesktopApp/tree/main/WinFormApp/21_03_10_140_ExcerciseWinApp)
@@ -65,10 +62,14 @@ C# 데스크톱앱 개발 학습 리포지토리입니다.
 ------------------------------------------------------------------------------------------------------------------------
 
 ## 5. WPF
-1. 간단한 계산기
-2. 아날로그 시계
-3. 몬테카를로 시뮬레이션으로 원주율 찾기
-4. 로그인 프로그램
+1. WPF로 Hello World 출력
+2. WPF의 레이아웃(결과화면없음)
+3. WPF BMI 계산기
+4. DispatcherTimer와 블링커(깜빡이는) 프로그램
+5. 간단한 계산기
+6. 아날로그 시계
+7. 몬테카를로 시뮬레이션으로 원주율 찾기
+8. 로그인 프로그램
 
 [기본학습상세(아직링크없음)]() <br>
 [소스모음](https://github.com/SeoDongWoo1216/StudyDesktopApp/tree/main/WPFApp)
