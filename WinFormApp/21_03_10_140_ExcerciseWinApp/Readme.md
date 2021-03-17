@@ -1,6 +1,6 @@
 ## ExcerciseWinApp
 1. [ListBox에 항목을 표시하는 3가지 방법](#ListBox에-항목을-표시하는-3가지-방법)
-2. [콤보박스를 이용한 식당 리스트 추가, 삭제](#콤보박스를-이용한-식당 리스트-추가,-삭제)
+2. [콤보박스를 이용한 식당 리스트 추가와 삭제](#콤보박스를-이용한-식당 리스트-추가와-삭제)
 3. [CheckedListBox를 이용한 희망 여행지 리스트](#CheckedListBox를-이용한-희망-여행지-리스트)
 4. [Listview를 이용한 상품 리스트 표시](#Listview를-이용한-상품-리스트-표시)
 5. [TreeView와 PictureBox를 이용한 역사 공부 프로그램](#TreeView와-PictureBox를-이용한-역사-공부-프로그램)
@@ -18,7 +18,7 @@
 
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_10_140_ExcerciseWinApp/21_03_10_140_ListBoxWinApp/FrmMain.cs)
 ---------------------------------------------------------------------------
-#### 콤보박스를 이용한 식당 리스트 추가, 삭제
+#### 콤보박스를 이용한 식당 리스트 추가와 삭제
 ![Combobox](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_10_140_ExcerciseWinApp/ResultImage/21_03_10_141_RestaurantSelApp_Result.gif "콤보박스")
 
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_10_140_ExcerciseWinApp/21_03_10_141_RestaurantSelApp/FrmMain.cs)
