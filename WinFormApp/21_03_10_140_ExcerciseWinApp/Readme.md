@@ -60,7 +60,7 @@
 ![OpenFileDialog](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_10_140_ExcerciseWinApp/ResultImage/21_03_11_153_TextViewerApp_result.gif "OpenFileDialog")
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_10_140_ExcerciseWinApp/21_03_11_153_TextViewerApp/FrmMain.cs)
 ---------------------------------------------------------------------------
-#### GDI+와 ToolStrip, StatusStrip을 사용한 그래픽 프로그램
+#### GDI와 ToolStrip, StatusStrip을 사용한 그래픽 프로그램
 ![결과화면없음]()
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_10_140_ExcerciseWinApp/21_03_11_155_SimpleGraphicEditor/FrmMain.cs)
 ---------------------------------------------------------------------------
