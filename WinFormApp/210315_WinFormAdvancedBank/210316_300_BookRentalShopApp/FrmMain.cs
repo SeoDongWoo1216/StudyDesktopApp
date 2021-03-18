@@ -55,6 +55,11 @@ namespace _210316_300_BookRentalShopApp
             FrmBooks frm = new FrmBooks();
             InitChildForm(frm, "책 관리");
         }
+        private void MnuRental_Click(object sender, EventArgs e)
+        {
+            FrmRental frm = new FrmRental();
+            InitChildForm(frm, "도서 대여관리");
+        }
 
         private void InitChildForm(Form frm, string strTitle)
         {
@@ -68,6 +73,6 @@ namespace _210316_300_BookRentalShopApp
             frm.FormBorderStyle = FormBorderStyle.None;
         }
 
-        
+       
     }
 }
