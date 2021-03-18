@@ -41,17 +41,24 @@ namespace _210316_300_BookRentalShopApp
         private void MnuDiv_Click(object sender, EventArgs e)
         {
             FrmDivCode frm = new FrmDivCode();
-            frm.Dock = DockStyle.Fill;
-            frm.MdiParent = this;  // this는 FrmMain이고 frm구분코드의 부모로 설정.
-            frm.Show();
-            frm.Width = this.ClientSize.Width - 10;
-            frm.Height = this.Height - menuStrip1.Height;
-            frm.WindowState = FormWindowState.Maximized;
+            InitChildForm(frm, "구분코드 관리");
         }
 
         private void MnuMember_Click(object sender, EventArgs e)
         {
             FrmMember frm = new FrmMember();
+            InitChildForm(frm, "회원 관리");
+        }
+
+        private void MnuBooks_Click(object sender, EventArgs e)
+        {
+            FrmBooks frm = new FrmBooks();
+            InitChildForm(frm, "책 관리");
+        }
+
+        private void InitChildForm(Form frm, string strTitle)
+        {
+            frm.Text = strTitle;
             frm.Dock = DockStyle.Fill;
             frm.MdiParent = this;  // this는 FrmMain이고 frm구분코드의 부모로 설정.
             frm.Show();
@@ -60,5 +67,7 @@ namespace _210316_300_BookRentalShopApp
             frm.WindowState = FormWindowState.Maximized;
             frm.FormBorderStyle = FormBorderStyle.None;
         }
+
+        
     }
 }
