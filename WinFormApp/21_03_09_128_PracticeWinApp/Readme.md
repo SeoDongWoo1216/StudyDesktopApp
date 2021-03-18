@@ -1,6 +1,12 @@
 # PracticeWinApp
 
-윈폼 컴포넌트 연습
+1. [레이블에서 여러 줄의 문자열 표시](#Label에서-여러-줄의-문자열-표시)
+2. [flag 이벤트 처리](#flag-이벤트-처리)
+3. [체크박스](#체크박스)
+4. [라디오버튼, 그룹박스](#라디오버튼,-그룹박스)
+5. [로그인 창 만들기](#로그인-창-만들기)
+6. [MaskedTextBox](#MaskedTextBox)
+7. [트랙바(TrackBar)로 RGB 컬러 조정](#트랙바로-RGB-컬러-조정)
 
 -----------------------------------------------------------
 ### Label에서 여러 줄의 문자열 표시
@@ -33,7 +39,7 @@
 
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_09_128_PracticeWinApp/21_03_09_138_MaskedTextApp/FrmMain.cs)
 -----------------------------------------------------------
-### 트랙바(TrackBar)로 RGB 컬러 조정
+### 트랙바로 RGB 컬러 조정
 ![트랙바(TrackBar)로 RGB 컬러 조정](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_09_128_PracticeWinApp/ResultImage/21_03_09_139_ColorChangeApp_result.gif "RGB 컬러조정")
 
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_09_128_PracticeWinApp/21_03_09_139_ColorChangeApp/FrmMain.cs)
