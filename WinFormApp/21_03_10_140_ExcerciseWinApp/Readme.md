@@ -9,7 +9,7 @@
 8. [TabControl을 이용한 디지털 알람시계](#TabControl을-이용한-디지털-알람시계)
 9. [WMP 컨트롤을 이용한 동영상 플레이어](#WMP-컨트롤을-이용한-동영상-플레이어)
 10. [OpenFileDialog를 이용해서 메모장에서 파일 열기](#OpenFileDialog를-이용해서-메모장에서-파일-열기)
-11. [GDI+와 ToolStrip, StatusStrip을 사용한 그래픽 프로그램(결과화면없음)](#GDI와-ToolStrip,-StatusStrip을-사용한-그래픽-프로그램)
+11. [GDI+와 ToolStrip, StatusStrip을 사용한 그래픽 프로그램(결과화면없음)](#GDI와-ToolStrip-StatusStrip을-사용한-그래픽-프로그램)
 
 
 ---------------------------------------------------------------------------
@@ -60,7 +60,7 @@
 ![OpenFileDialog](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_10_140_ExcerciseWinApp/ResultImage/21_03_11_153_TextViewerApp_result.gif "OpenFileDialog")
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_10_140_ExcerciseWinApp/21_03_11_153_TextViewerApp/FrmMain.cs)
 ---------------------------------------------------------------------------
-#### GDI와 ToolStrip, StatusStrip을 사용한 그래픽 프로그램
+#### GDI와 ToolStrip StatusStrip을 사용한 그래픽 프로그램
 ![결과화면없음]()
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/21_03_10_140_ExcerciseWinApp/21_03_11_155_SimpleGraphicEditor/FrmMain.cs)
 ---------------------------------------------------------------------------
