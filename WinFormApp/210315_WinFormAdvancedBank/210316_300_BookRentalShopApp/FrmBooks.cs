@@ -204,7 +204,7 @@ namespace _210316_300_BookRentalShopApp
                     cmd.Parameters.Add(pPrice);
 
                     SqlParameter pDescriptions = new SqlParameter("@Descriptions", SqlDbType.NVarChar);
-                    pDescriptions.Value = TxtDescriptions.Text;
+                    pDescriptions.Value = Helper.Common.ReplaceCmdText(TxtDescriptions.Text);    // 210319 설명텍스트박스에 SQL인젝션 방지를 위해 문자열 메서드 호출
                     cmd.Parameters.Add(pDescriptions);
 
 

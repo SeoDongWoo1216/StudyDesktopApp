@@ -28,5 +28,14 @@ namespace _210316_300_BookRentalShopApp.Helper
 
             return localIp;
         }
+
+        internal static string ReplaceCmdText(string strSource)
+        {
+            // Sql Injection 방지
+            var result = strSource.Replace("'", "＇");  // 키보드 소따옴표를 특수 문자 소따옴표로 변경
+            result = result.Replace("--", "");          // SQL의 주석 못달게 막기
+            result = result.Replace(";", "");           // 세미콜론(;) 무력화
+            return result;
+        }
     }
 }

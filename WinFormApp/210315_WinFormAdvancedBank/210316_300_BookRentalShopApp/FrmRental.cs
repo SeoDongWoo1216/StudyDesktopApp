@@ -159,8 +159,11 @@ namespace _210316_300_BookRentalShopApp
                     else               // UPDATE
                     {
                         query = @"UPDATE [dbo].[rentaltbl]
-                                     SET [returnDate] = GETDATE()
-                                        ,[rentalState] = 'T'
+                                     SET [returnDate] = case @rentalState
+                                                           WHEN 'T' then GETDATE()
+                                                           WHEN 'R' then null
+                                                        end
+                                        ,[rentalState] = @rentalState
                                    WHERE Idx = @Idx";
                     }
 
@@ -191,6 +194,10 @@ namespace _210316_300_BookRentalShopApp
                         SqlParameter pIdx = new SqlParameter("@Idx", SqlDbType.Int);
                         pIdx.Value = TxtIdx.Text;
                         cmd.Parameters.Add(pIdx);
+
+                        SqlParameter pRentalState = new SqlParameter("@rentalState", SqlDbType.Char, 1);
+                        pRentalState.Value = CboRentalState.SelectedValue;
+                        cmd.Parameters.Add(pRentalState);
                     }
                    
 
@@ -314,7 +321,7 @@ namespace _210316_300_BookRentalShopApp
             if (string.IsNullOrEmpty(TxtMemberName.Text) || CboRentalState.SelectedIndex < 0 ||
                 string.IsNullOrEmpty(TxtBookNames.Text) || DtpRentalDate.Value == null)
             {
-                MetroMessageBox.Show(this, "빈 값은 삭제할 수 없습니다.", "경고", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MetroMessageBox.Show(this, "빈 값은 저장할 수 없습니다.", "경고", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
