@@ -17,8 +17,10 @@
             <Slider x:Name="sldChanger" Minimum="0" Maximum="100" Value="0"  />
         </StackPanel>-->
 
-        <ComboBox ItemsSource="{Binding}">
-            <!-- ItemTemplate은 아이템을 선언/정의하라는 뜻, 콤보박스랑 리스트박스는 번갈아 사용해도 상관없다.-->
+        <!--<ComboBox ItemsSource="{Binding}">-->
+        <!-- ItemTemplate은 아이템을 선언/정의하라는 뜻, 콤보박스랑 리스트박스는 번갈아 사용해도 상관없다.-->
+        
+        <!--
             <ComboBox.ItemTemplate>
                 <ItemContainerTemplate>
                     <StackPanel>
@@ -36,6 +38,52 @@
                 </ItemContainerTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
+        
+        -->
 
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="Search" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalContentAlignment="Right"/>
+            <TextBox x:Name="TxtSearch" Grid.Row="0" Grid.Column="1" Margin="5" 
+                     TextChanged="TxtSearch_TextChanged"/>
+        </Grid>
+
+        <DataGrid x:Name="GrdProducts" Grid.Row="1" Grid.Column="0" 
+                  Margin="10" IsReadOnly="True" />
+
+        <Border Grid.Row="1" Grid.Column="1" Margin="10"
+                BorderBrush="DarkGray" BorderThickness="2"
+                Background="WhiteSmoke"
+                DataContext="{Binding SelectedItem, ElementName=GrdProducts}">
+            
+            <StackPanel Margin="10">
+                <Label FontSize="14" FontWeight="ExtraBold"
+                       HorizontalAlignment="Center"
+                       Content="Product Details"/>
+                <TextBlock Text="Title"/>
+                <TextBox Text="{Binding Title}" />
+                <TextBlock Text="Color" />
+                <TextBox Text="{Binding Color}" />
+                <Border Height="30" Background="{Binding Color}"/>
+                <TextBlock Text="Price"/>
+                <TextBox Text="{Binding Price}"/>
+                <TextBlock Text="Reference"/>
+                <TextBox Text="{Binding Reference}"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </Page>

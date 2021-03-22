@@ -9,12 +9,19 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Contact" Initialized="Page_Initialized">
     <!--xmlns:bl비지니즈 로직 클래스 추가-->
+    
+    <!--페이지 리소스 추가(해당되는 페이지에만 호출해서 사용가능)-->
+    <!--<Page.Resources>
+        <ResourceDictionary>
+            <Button x:Key="button" Content="Test(페이지에있음)"/>
+            <SolidColorBrush x:Key="accentBrush" Color="Red"/>
+        </ResourceDictionary>
+    </Page.Resources>-->
 
-
-    <Grid>
+    <Grid Margin="10" Background="{StaticResource background}">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="7*"/>
+            <RowDefinition Height="6*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -22,8 +29,10 @@
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Content="sender : " Grid.Row="0" Grid.Column="0" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Right"/>
-        <Label Content="Message : " Grid.Row="1" Grid.Column="0" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0, 10"/>
+        <Label Content="sender : " Grid.Row="0" Grid.Column="0" FontSize="16"
+               VerticalAlignment="Center" HorizontalAlignment="Right"/>
+        <Label Content="Message : " Grid.Row="1" Grid.Column="0" FontSize="16" 
+               VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0, 10"/>
 
         <TextBox x:Name="TxtSender" Grid.Row="0" Grid.Column="1" Margin="10" />
         <TextBox x:Name="TxtMessage" Grid.Row="1" Grid.Column="1" Margin="10" />
@@ -32,8 +41,16 @@
         </Label>
 
         <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">  <!--Stack패널은 기본적으로 버티컬이라 호리존탈로 바꿈-->
-            <Button x:Name="BtnSend" Content="Send" Margin="5" Width="100"/>
-            <Button x:Name="BtnCancel" Content="Cancel" Margin="5" Width="100"/>
+
+            <!--리소스에 지정되있던 버튼을 app.xaml나 페이지 리소스에서 동적으로 가져올수있음-->
+            <Button Content="{StaticResource button}" Background="{StaticResource accentBrush}"/>
+            
+            <Button x:Name="BtnSend" Content="Send" Margin="5" Width="100" FontSize="14"
+                    Style="{StaticResource MahApps.Styles.Button.Circle}"  
+                    Background="{StaticResource MahApps.Brushes.Accent}"/>
+            
+            <Button x:Name="BtnCancel" Content="Cancel" Margin="5" Width="100"  FontSize="14"/>
+
         </StackPanel>
     </Grid>
 </Page>

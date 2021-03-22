@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _210319_WpfPracticeApp
+namespace _210319_WpfPracticeApp.BusinessLogic
 {
     public class ProductsFactory
     {
@@ -29,7 +29,6 @@ namespace _210319_WpfPracticeApp
         static IList<Product> products;
         static ProductsFactory()
         {
-            // 100개 데이터 랜덤으로 생성
             products = new List<Product>();
             for (int i = 0; i < 100; i++)
             {

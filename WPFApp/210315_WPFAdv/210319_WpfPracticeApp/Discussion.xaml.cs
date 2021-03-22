@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _210319_WpfPracticeApp.BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,13 @@ namespace _210319_WpfPracticeApp
         public Discussion()
         {
             InitializeComponent();
+        }
+
+        private void Page_Initialized(object sender, EventArgs e)
+        {
+            // 데이터바인딩을위해 동적으로 바인딩
+            Talk talk = new Talk();
+            this.DataContext = talk;
         }
     }
 }

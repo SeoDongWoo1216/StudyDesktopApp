@@ -6,13 +6,27 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                
                 <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
                 <!-- Theme setting -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />
 
+                
+                
+                
+                <ResourceDictionary Source="/assets/PracticeTemplate.xaml" />
+                
+                
             </ResourceDictionary.MergedDictionaries>
+
+            <!-- 버튼을 넣는 부분 기억하기위한 주석 -->
+            <!--
+            <Button x:Key="button" Content="Test(App.xaml에있음)"/> 
+            <SolidColorBrush x:Key="accentBrush" Color="Red"/>
+            -->
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -8,6 +8,12 @@
         xmlns:local="clr-namespace:_210319_WpfPracticeApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    
+
+    
+    
+    
+    
     <Grid>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Visible" Source="/210319_WpfPracticeApp;component/MainMenu.xaml"/>
 
@@ -15,6 +21,7 @@
         <Ellipse Width="200" Height="200" Fill="Indigo" Stroke="Black" StrokeThickness="10" />
         <Rectangle Width="100" Height="100" Fill="Green" Stroke="Black" StrokeThickness="10" />
             -->
+
     </Grid>
 
 

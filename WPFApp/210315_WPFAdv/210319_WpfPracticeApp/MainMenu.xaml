@@ -27,10 +27,25 @@
         
         <Button x:Name="BtnLiveSupport"  Grid.Row="1" Grid.Column="1" 
                 Content="Live Support"  Margin="10" Click="BtnLiveSupport_Click" />
-        
+
         <Button x:Name="BtnEmailSupport" Grid.Row="1" Grid.Column="2" 
-                Content="Email Support" Margin="10" Click="BtnEmailSupport_Click" />
-       
+                Content="Email Support" Margin="10" Click="BtnEmailSupport_Click">
+            <Button.Template>
+                <!--컨트롤 템플릿에는 컴포넌트가 하나만 들어가기때문에 Grid로 감싸주어야한다.-->
+                
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Rectangle Fill="DarkSlateBlue" RadiusY="12" RadiusX="12" StrokeThickness="3" Stroke="DarkBlue"/>
+                        <Label Content="{TemplateBinding Content}" 
+                               Foreground="White" FontSize="20"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
         <Label  Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Content="Adventure Works" 
                 FontSize="36" HorizontalContentAlignment="Center"/>
         <!-- Grid.ColumnSpan 으로 컬럼 3칸을 합쳐서 쓸 수 있다-->

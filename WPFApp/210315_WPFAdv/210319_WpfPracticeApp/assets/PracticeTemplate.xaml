@@ -1,0 +1,12 @@
+﻿<!--직접 만들어보는 딕셔너리-->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:_210319_WpfPracticeApp.assets">
+    <Button x:Key="button" Content="직접 만든 리소스!!!"/>
+    <SolidColorBrush x:Key="accentBrush" Color="Red"/>
+    <LinearGradientBrush x:Key="background">
+        <GradientStop Color="#ffdbffe7" Offset="0"/>
+        <GradientStop Color="#ff03882d" Offset="1"/>
+    </LinearGradientBrush>
+
+</ResourceDictionary>
