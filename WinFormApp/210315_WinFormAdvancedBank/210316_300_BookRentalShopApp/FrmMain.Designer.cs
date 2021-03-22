@@ -67,33 +67,33 @@ namespace _210316_300_BookRentalShopApp
             // MnuDiv
             // 
             this.MnuDiv.Name = "MnuDiv";
-            this.MnuDiv.Size = new System.Drawing.Size(180, 22);
+            this.MnuDiv.Size = new System.Drawing.Size(138, 22);
             this.MnuDiv.Text = "구분코드(&C)";
             this.MnuDiv.Click += new System.EventHandler(this.MnuDiv_Click);
             // 
             // MnuMember
             // 
             this.MnuMember.Name = "MnuMember";
-            this.MnuMember.Size = new System.Drawing.Size(180, 22);
+            this.MnuMember.Size = new System.Drawing.Size(138, 22);
             this.MnuMember.Text = "회원(&P)";
             this.MnuMember.Click += new System.EventHandler(this.MnuMember_Click);
             // 
             // MnuBooks
             // 
             this.MnuBooks.Name = "MnuBooks";
-            this.MnuBooks.Size = new System.Drawing.Size(180, 22);
+            this.MnuBooks.Size = new System.Drawing.Size(138, 22);
             this.MnuBooks.Text = "도서(&B)";
             this.MnuBooks.Click += new System.EventHandler(this.MnuBooks_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(135, 6);
             // 
             // MnuRental
             // 
             this.MnuRental.Name = "MnuRental";
-            this.MnuRental.Size = new System.Drawing.Size(180, 22);
+            this.MnuRental.Size = new System.Drawing.Size(138, 22);
             this.MnuRental.Text = "대여관리(&R)";
             this.MnuRental.Click += new System.EventHandler(this.MnuRental_Click);
             // 
@@ -116,6 +116,7 @@ namespace _210316_300_BookRentalShopApp
             this.Name = "FrmMain";
             this.Text = "책 대여점 프로그램";
             this.TransparencyKey = System.Drawing.Color.Empty;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Shown += new System.EventHandler(this.FrmMain_Shown);
             this.menuStrip1.ResumeLayout(false);

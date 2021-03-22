@@ -107,7 +107,7 @@ namespace _210316_300_BookRentalShopApp
             // 
             // 
             this.TxtPassword.CustomButton.Image = null;
-            this.TxtPassword.CustomButton.Location = new System.Drawing.Point(115, 1);
+            this.TxtPassword.CustomButton.Location = new System.Drawing.Point(129, 1);
             this.TxtPassword.CustomButton.Name = "";
             this.TxtPassword.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.TxtPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -139,7 +139,7 @@ namespace _210316_300_BookRentalShopApp
             // 
             // 
             this.TxtUserId.CustomButton.Image = null;
-            this.TxtUserId.CustomButton.Location = new System.Drawing.Point(115, 1);
+            this.TxtUserId.CustomButton.Location = new System.Drawing.Point(129, 1);
             this.TxtUserId.CustomButton.Name = "";
             this.TxtUserId.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.TxtUserId.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -171,7 +171,7 @@ namespace _210316_300_BookRentalShopApp
             // 
             // 
             this.TxtEmail.CustomButton.Image = null;
-            this.TxtEmail.CustomButton.Location = new System.Drawing.Point(115, 1);
+            this.TxtEmail.CustomButton.Location = new System.Drawing.Point(129, 1);
             this.TxtEmail.CustomButton.Name = "";
             this.TxtEmail.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.TxtEmail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -203,7 +203,7 @@ namespace _210316_300_BookRentalShopApp
             // 
             // 
             this.TxtMobile.CustomButton.Image = null;
-            this.TxtMobile.CustomButton.Location = new System.Drawing.Point(186, 1);
+            this.TxtMobile.CustomButton.Location = new System.Drawing.Point(129, 1);
             this.TxtMobile.CustomButton.Name = "";
             this.TxtMobile.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.TxtMobile.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -235,7 +235,7 @@ namespace _210316_300_BookRentalShopApp
             // 
             // 
             this.TxtAddr.CustomButton.Image = null;
-            this.TxtAddr.CustomButton.Location = new System.Drawing.Point(115, 1);
+            this.TxtAddr.CustomButton.Location = new System.Drawing.Point(129, 1);
             this.TxtAddr.CustomButton.Name = "";
             this.TxtAddr.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.TxtAddr.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -354,7 +354,7 @@ namespace _210316_300_BookRentalShopApp
             // 
             // 
             this.TxtNames.CustomButton.Image = null;
-            this.TxtNames.CustomButton.Location = new System.Drawing.Point(115, 1);
+            this.TxtNames.CustomButton.Location = new System.Drawing.Point(129, 1);
             this.TxtNames.CustomButton.Name = "";
             this.TxtNames.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.TxtNames.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -386,7 +386,7 @@ namespace _210316_300_BookRentalShopApp
             // 
             // 
             this.TxtIdx.CustomButton.Image = null;
-            this.TxtIdx.CustomButton.Location = new System.Drawing.Point(115, 1);
+            this.TxtIdx.CustomButton.Location = new System.Drawing.Point(129, 1);
             this.TxtIdx.CustomButton.Name = "";
             this.TxtIdx.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.TxtIdx.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;

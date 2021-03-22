@@ -67,10 +67,11 @@ namespace _210316_300_BookRentalShopApp
             frm.Dock = DockStyle.Fill;
             frm.MdiParent = this;  // this는 FrmMain이고 frm구분코드의 부모로 설정.
             frm.Show();
-            frm.Width = this.ClientSize.Width - 10;
+            frm.Width = this.ClientSize.Width - 1000;
             frm.Height = this.Height - menuStrip1.Height;
             frm.WindowState = FormWindowState.Maximized;
             frm.FormBorderStyle = FormBorderStyle.None;
+            frm.StartPosition = FormStartPosition.Manual;
         }
 
        
