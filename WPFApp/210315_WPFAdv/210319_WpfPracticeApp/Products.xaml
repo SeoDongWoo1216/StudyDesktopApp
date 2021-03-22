@@ -1,0 +1,41 @@
+﻿<Page x:Class="_210319_WpfPracticeApp.Products"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_210319_WpfPracticeApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Products" Initialized="Page_Initialized" >
+
+    <!-- 바인딩 사용: {Binding Value, ElementName=컴포넌트이름}으로 값의 변화에따라 같이 움직이게 해줄 수 있다. => 겁나편함 -->
+    <Grid Margin="10">
+        
+        <!--<StackPanel>
+            <ProgressBar Value="{Binding Value, ElementName=sldChanger}" Height="20"/>
+            <TextBlock Text="{Binding Value, ElementName=sldChanger}" TextAlignment="Center"/>
+            <Slider x:Name="sldChanger" Minimum="0" Maximum="100" Value="0"  />
+        </StackPanel>-->
+
+        <ComboBox ItemsSource="{Binding}">
+            <!-- ItemTemplate은 아이템을 선언/정의하라는 뜻, 콤보박스랑 리스트박스는 번갈아 사용해도 상관없다.-->
+            <ComboBox.ItemTemplate>
+                <ItemContainerTemplate>
+                    <StackPanel>
+                        <TextBlock Text="Speed" />
+                        <TextBlock Text="{Binding Path=Speed}"/>
+                        <Slider Value="{Binding Path=Speed}" Maximum="300" />
+                        <TextBlock Text="Color"/>
+                        <Border Height="10">
+                            <Border.Background>
+                                <SolidColorBrush Color="{Binding MainColor}"/>
+                            </Border.Background>
+                        </Border>
+                        <TextBox Text="{Binding MainColor}"/>
+                    </StackPanel>
+                </ItemContainerTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+    </Grid>
+</Page>
