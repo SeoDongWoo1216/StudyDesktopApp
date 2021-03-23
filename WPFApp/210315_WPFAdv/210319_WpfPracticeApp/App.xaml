@@ -1,8 +1,7 @@
 ﻿<Application x:Class="_210319_WpfPracticeApp.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:_210319_WpfPracticeApp"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:_210319_WpfPracticeApp">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -13,12 +12,7 @@
                 <!-- Theme setting -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />
 
-                
-                
-                
                 <ResourceDictionary Source="/assets/PracticeTemplate.xaml" />
-                
-                
             </ResourceDictionary.MergedDictionaries>
 
             <!-- 버튼을 넣는 부분 기억하기위한 주석 -->
