@@ -152,7 +152,7 @@ namespace _210323_PhotoSensorMonApp
                 {
                     if (conn.State == ConnectionState.Closed) conn.Open();
 
-                    var query = $@"SELECT Idx, Value 
+                    var query = $@"SELECT Top 250 Idx, Value 
                                     FROM Tbl_PhotoResistor 
                                    WHERE CurrentDt > CONVERT(DATETIME, '{DateTime.Now:yyyy-MM-dd}' )
                                   ORDER BY IDX;";

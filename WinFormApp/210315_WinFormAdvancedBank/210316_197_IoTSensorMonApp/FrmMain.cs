@@ -19,7 +19,7 @@ namespace _210316_197_IoTSensorMonApp
         private string connString = "Data Source=127.0.0.1;Initial Catalog=IoTData;" +
                                     "User ID=sa;Password=mssql_p@ssw0rd!";
 
-        private double xCount = 200;  // 차트에 보이는 데이터 수
+        private double xCount = 100;  // 차트에 보이는 데이터 수
         public FrmMain()
         {
             InitializeComponent();
@@ -96,7 +96,7 @@ namespace _210316_197_IoTSensorMonApp
         {
             IsSimulation = true;
             timerSimul.Enabled = true;
-            timerSimul.Interval = 1000;
+            timerSimul.Interval = 200;
             timerSimul.Tick += TimerSimul_Tick;
             timerSimul.Start();
         }
