@@ -19,7 +19,7 @@ namespace _210316_197_IoTSensorMonApp
         private string connString = "Data Source=127.0.0.1;Initial Catalog=IoTData;" +
                                     "User ID=sa;Password=mssql_p@ssw0rd!";
 
-        private double xCount = 50;  // 차트에 보이는 데이터 수
+        private double xCount = 200;  // 차트에 보이는 데이터 수
         public FrmMain()
         {
             InitializeComponent();
@@ -96,20 +96,36 @@ namespace _210316_197_IoTSensorMonApp
         {
             IsSimulation = true;
             timerSimul.Enabled = true;
-            timerSimul.Interval = 100;
+            timerSimul.Interval = 1000;
             timerSimul.Tick += TimerSimul_Tick;
             timerSimul.Start();
         }
 
+        private long timeSpan = 0; // 시간 흐름 값
+        private int randMaxVal = 0; // 랜덤값 담을 변수
+
         private void MnuEndSimulation_Click(object sender, EventArgs e)
         {
+
             IsSimulation = false;
             timerSimul.Stop();
         }
 
         private void TimerSimul_Tick(object sender, EventArgs e)
         {
-            int value = randPhoto.Next(1, 1023); // 1 ~ 1023 사이의 값
+            timeSpan += 1;
+            var temp = timeSpan % 30; // 30부터 0으로 다시 시작(플래그)
+
+            if(temp.ToString().Length == 2)
+            {
+                randMaxVal = 980;
+            }
+            else
+            {
+                randMaxVal = 120;
+            }
+
+            int value = randPhoto.Next(randMaxVal-40, randMaxVal); // 
             ShowSensorValue(value.ToString());
         }
 
