@@ -26,7 +26,7 @@
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/210315_175_ImageViewerApp/FrmViewer.cs)
 ---------------------------------------------------------------------------
 #### 아두이노 센서 모니터링
-![센서모니터링](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/ResultImage/210316_197_IoTSensorMonApp_result.gif)
+![센서모니터링](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/ResultImage/210316_197_IoTSensorMonApp_result_new.gif)
 
 - [코드보기](https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/210316_197_IoTSensorMonApp/FrmMain.cs)
 ---------------------------------------------------------------------------
