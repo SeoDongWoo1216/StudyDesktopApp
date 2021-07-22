@@ -1,3 +1,12 @@
+# BookRentalShop 
+- C# Winforms를 활용하여 도서 대여 관리 프로그램 구현
+- 로그인, 구분코드 관리, 도서관리, 회원관리, 도서대여 관리로 각 폼을 디자인 및 기능 구현
+- 각 폼마다 CRUD(Create, Read, Update, Delete) 버튼 이벤트 구현
+- Winforms <-> SQL Server 연동을 위한 SqlConnection 클래스 선언 및 쿼리문 사용을 위한 SqlCommand 사용
+
+----------------------------------------
+
+
 # Main
 
 <img src = "https://github.com/SeoDongWoo1216/StudyDesktopApp/blob/main/WinFormApp/210315_WinFormAdvancedBank/210316_300_BookRentalShopApp/result_image/Main.png">
@@ -738,3 +747,45 @@ private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         }
 ```
 -------------------------------
+
+# 부록
+## - NLog
+오류가 발생하거나 NLog를 지정하면 .txt 파일에 따로 타임로그가 저장된다.(NuGet 패키지로 누구나 이용가능)
+```C#
+/* NLog file 형식 지정 */
+
+<targets>
+	<target name="console" xsi:type="ColoredConsole"
+			layout="${date:format=HH\:mm\:ss}| [TID:${threadid}] | ${stacktrace} | ${message}" />
+	<target name="file" xsi:type="File" fileName="${basedir}/Logs/${date:format=yyyyMMdd}.log"
+			layout="[${date}] [TID:${threadid}] [{stacktrace}]: ${message}" />
+</targets>
+```
+
+<br><br>
+
+## SqlConnection 클래스
+```C#
+/* SqlConnection 클래스로 SQL Server와 Winforms를 연동할 수 있다. */
+using System.data;
+using System.data.SqlClient;
+
+List<DataPoint> result = new List<DataPoint>();
+try
+{
+    using (SqlConnection conn = new SqlConnection(connString))
+    {
+        if (conn.State == System.Data.ConnectionState.Closed) conn.Open();
+
+        var query = $@" /* 데이터를 다룰 쿼리문을 여기에 입력*/ ";
+
+        SqlCommand cmd = new SqlCommand(query, conn);
+        SqlDataReader reader = cmd.ExecuteReader();
+
+        while (reader.Read())
+        {
+            /* 쿼리문 처리 */
+        }
+    }
+}
+```
