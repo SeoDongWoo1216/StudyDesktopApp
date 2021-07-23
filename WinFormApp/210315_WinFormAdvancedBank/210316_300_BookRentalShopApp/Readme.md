@@ -4,6 +4,12 @@
 - 각 폼마다 CRUD(Create, Read, Update, Delete) 버튼 이벤트 구현
 - Winforms <-> SQL Server 연동을 위한 SqlConnection 클래스 선언 및 쿼리문 사용을 위한 SqlCommand 사용
 
+----
+### Tools
+- Visual Studio
+- Winform Metro UI Framework
+- SQL Server
+
 -------------------------
 
 ## 실행화면
