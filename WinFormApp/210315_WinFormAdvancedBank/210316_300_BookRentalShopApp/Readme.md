@@ -6,7 +6,7 @@
 
 ----
 ### Tools
-- Visual Studio
+- Visual Studio 2019
 - Winform Metro UI Framework
 - SQL Server
 
